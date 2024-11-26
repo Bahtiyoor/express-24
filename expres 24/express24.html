@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .orta {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            position: fixed;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .yuqori {
+            background-color: rgb(230, 12, 12);
+            width: 100%;
+            height: 100px;
+        }
+
+        .qidiruv input {
+            width: 358px;
+            height: 48px;
+            border-radius: 5px;
+            padding: 14px 40px;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+        .tuma {
+            width: 82px;
+            height: 50px;
+            padding: 14px 16px;
+            background-color: yellow;
+            border-radius: 12px;
+            font-size: 15px;
+            margin-left: 7px;
+        }
+
+        .tanlov select {
+            width: 280px;
+            height: 48px;
+            border-radius: 14px 16px;
+            margin-left: 12px;
+        }
+
+        .zxcv {
+            margin: 20px;
+            width: 1900px;
+            height: 100px;
+            display: flex;
+            position: fixed;
+        }
+
+        .rasm img {
+            width: 172px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .DIV {
+            width: 1040px;
+            height: 4500px;
+            padding: 50px 70px;
+        }
+
+        .imgg {
+            background-image: url(plow1.jpg);
+            width: 900px;
+            height: 360px;
+            border-radius: 30px;
+        }
+
+        .m {
+            font-size: 20px;
+        }
+
+        .matn {
+            position: relative;
+            top: -200px;
+            left: 50px;
+            font-size: 60px;
+
+            color: white;
+        }
+
+        .iniput {
+            width: 70px;
+            height: 38px;
+            background-color: white;
+            border-radius: 100px;
+        }
+
+        .iniput {
+            font-size: 20px;
+            color: black;
+        }
+
+        .yetka {
+            font-size: 20px;
+            color: black;
+            width: 244px;
+            height: 38px;
+            background-color: white;
+            border-radius: 100px;
+            padding-top: 6px;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+
+        .all {
+            display: flex;
+            position: relative;
+            top: -200px;
+            left: 50px;
+            font-size: 60px;
+        }
+
+        .star {
+            font-size: 15px;
+            border-radius: 100%;
+            background-color: white;
+            width: 38px;
+            height: 38px;
+            padding: 8px;
+            margin-left: 10px;
+        }
+
+        .stars {
+            font-size: 15px;
+            border-radius: 100%;
+            background-color: white;
+            width: 38px;
+            height: 38px;
+            padding: 8px;
+            margin-left: 10px;
+            z-index: 1;
+        }
+
+        .vnimaniya {
+            width: 353px;
+            height: 100px;
+            background-image: linear-gradient(120deg, rgb(84, 255, 212), rgb(254, 254, 113));
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .put {
+            width: 900px;
+            height: 113px;
+            padding: 32px 0px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .put input {
+            width: 900px;
+            height: 47px;
+            border-radius: 15px;
+            border: rgb(52, 52, 52);
+        }
+
+        .orta {
+            z-index: 2;
+        }
+
+        .plov {
+            width: 58px;
+            height: 35px;
+            background-color: yellow;
+            border-radius: 10px;
+        }
+
+        .manti {
+            width: 130px;
+            height: 35px;
+            background-color: #F6F6FB;
+            border-radius: 10px;
+        }
+
+        .kombo {
+            width: 104px;
+            height: 35px;
+            background-color: #F6F6FB;
+            border-radius: 10px;
+        }
+
+        .cenb {
+            width: 160px;
+            height: 35px;
+            background-color: #F6F6FB;
+            border-radius: 10px;
+        }
+
+        .salat {
+            width: 130px;
+            height: 35px;
+            background-color: #F6F6FB;
+            border-radius: 10px;
+        }
+
+        .plus {
+            width: 160px;
+            height: 35px;
+            background-color: #F6F6FB;
+            border-radius: 10px;
+        }
+
+        .qosh {
+            display: flex;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .esho select {
+            width: 75px;
+            height: 35px;
+            border-radius: 10px;
+            background-color: #F6F6FB;
+            border: none;
+            font-size: 20px;
+        }
+
+        .two {
+            width: 207px;
+            height: 335px;
+            border-radius: 15px;
+            background-color: #F3F3F8;
+        }
+
+        .tree {
+            width: 207px;
+            height: 335px;
+            border-radius: 15px;
+            background-color: #F3F3F8;
+        }
+
+        .birga {
+            display: flex;
+            gap: 25px;
+        }
+
+        .two img {
+            width: 195px;
+            height: 195px;
+            border-radius: 15px;
+            margin: 6px;
+        }
+
+        .tree img {
+            width: 195px;
+            height: 195px;
+            border-radius: 15px;
+            margin: 6px;
+        }
+
+        .z {
+            padding: 5px;
+            width: 200px;
+            height: 64px;
+        }
+
+        .z1 {
+            padding: 5px;
+            width: 200px;
+            height: 64px;
+        }
+
+        button {
+            width: 195px;
+            height: 48px;
+            background-color: white;
+            border-radius: 16px;
+            margin: 5px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #d9d9d9;
+        }
+
+        .qaz {
+            display: flex;
+            gap: 16px;
+        }
+
+        .z2 {
+            display: flex;
+            gap: 16px;
+        }
+
+        .z3 {
+            display: flex;
+            gap: 16px;
+        }
+
+        .z4 {
+            display: flex;
+            gap: 16px;
+        }
+
+        .savat {
+            width: 575px;
+            height: 71px;
+            border: gray;
+            border: 1px solid black;
+            position: relative;
+            top: 190px;
+            border-radius: 30px 30px 0px 0px;
+            border-bottom: none;
+            padding: 30px;
+        }
+
+        .SAVAT1 {
+            width: 575px;
+            height: 4000px;
+            border: 1px solid black;
+            position: relative;
+            top: 190px;
+            border-top: none;padding: 400px 200px 0px;
+        }
+
+        .sigmaa {
+            display: flex;
+        }
+    </style>
+    <div class="sigmaa">
+
+        <div class="nesigma">
+            <div class="orta">
+                <div class="zxcv">
+                    <div class="rasm"><img src="Без названия (2).jpg" alt=""></div>
+                    <div class="qidiruv"><input type="search" placeholder="🔍   Заведение, блюдо, товар или кухня">
+                    </div>
+                    <button class="tuma">найти</button>
+                    <div class="tanlov">
+                        <select name="" id="">
+                            <option value="">
+                                <h1>📌Tashkent</h1>
+                            </option>
+                        </select>
+                    </div>
+                    </select>
+                </div>
+            </div>
+            <div class="yuqori"></div>
+            <div class="DIV">
+                <p class="m">≪Orqaga </p><img src="plow1.jpg" alt="" class="imgg">
+                <div class="matn">
+                    <p><b>Osh Markazi Broadway</b></p><br>
+                </div>
+                <div class="all">
+
+                    <div class="iniput">
+                        <p> ⭐4.8</p>
+                    </div>
+                    <div class="yetka">
+                        <p>yekazish vaqti 20-30 min</p>
+                    </div>
+                    <div class="star">
+                        <p>🤍</p>
+                    </div>
+                    <div class="stars">
+                        <p><i><b>
+                                    <center>i</center>
+                                </b></i></p>
+                    </div>
+                </div>
+                <div class="vnimaniya">
+                    <h1>
+                        Обратите внимание</h1><br>
+                    <p>Скидки и промокоды не распространяются на заказы из данного ресторана</p>
+                </div>
+                <div class="put"><input type="text" placeholder="   🔍  Muassasa buyicha qidirish"></div>
+                <div class="qosh">
+                    <div class="plov">
+                        <h2>плов</h2>
+                    </div>
+                    <div class="manti">
+                        <h2>хоним и манти</h2>
+                    </div>
+                    <div class="kombo">
+                        <h2>комбо плов</h2>
+                    </div>
+                    <div class="cenb">
+                        <h2>Сеты хоним манты</h2>
+                    </div>
+                    <div class="salat">
+                        <h2>Салаты</h2>
+                    </div>
+                    <div class="plus">
+                        <h2> Добавки к плову</h2>
+                    </div>
+                    <div class="esho"><select name="" id="">
+                            <option value="">
+                                <h1>еще</h1>
+                            </option>
+                        </select></div>
+                </div><br><br>
+                <div class="ji">
+                    <h1>плов</h1>
+                </div><br>
+                <div class="birga">
+                    <div class="two"><img src="rasim.jpg" alt="">
+                        <h3 class="z">Плов с перепелиным яйцом+казы</h3><button>
+                            <h1>37 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="rasim.jpg" alt="">
+                        <h3 class="z">Плов с перепелиным яйцом</h3><button>
+                            <h1>45 000 сум</h1>
+                        </button>
+                    </div>
+                </div><br><br>
+                <h1>Хоним и Манты</h1><br>
+                <div class="tree"><img src="red.jpg" alt="">
+                    <h1 class="z1">соус для хоним </h1><button>
+                        <h1>5 000 сум</h1>
+                    </button>
+                </div><br><br>
+                <h1>Комбо плов</h1><br>
+                <div class="qaz">
+                    <div class="two"><img src="re.jpg" alt="">
+                        <h2 class="z1">Свадебный плов с лагяном</h2><button>
+                            <h1>75 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="re.jpg" alt="">
+                        <h2 class="z1">Комбо плов 1 кг</h2><button>
+                            <h1>114 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="two"><img src="re.jpg" alt="">
+                        <h2 class="z1">Комбо плов 1,5 кг</h2><button>
+                            <h1>167 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="re.jpg" alt="">
+                        <h2 class="z1">Комбо плов 2 кг</h2><button>
+                            <h1>220 000 сум</h1>
+                        </button>
+                    </div>
+                </div><br><br>
+                <div class="z2">
+
+                    <div class="two"><img src="re.jpg" alt="">
+                        <h2 class="z">Комбо плов 2,5 кг</h2><button>
+                            <h1>277 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="re.jpg" alt="">
+                        <h2 class="z">Комбо плов 3 кг</h2><button>
+                            <h1>330 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="two"><img src="re.jpg" alt="">
+                        <h3 class="z">Комбо плов 3,5 кг</h3><button>
+                            <h1>282 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="re.jpg" alt="">
+                        <h3 class="z">Комбо плов 4 кг</h3><button>
+                            <h1>435 000 сум</h1>
+                        </button>
+                    </div>
+                </div><br><br>
+                <h1>Сеты хоним/манты</h1><br>
+                <div class="z3">
+                    <div class="two"><img src="ree.jpg" alt="">
+                        <h2 class="z">Сет хоним с компотом</h2><button>
+                            <h1>46 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="ree.jpg" alt="">
+                        <h2 class="z">Сет хоним с кока колой</h2><button>
+                            <h1>48 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="two"><img src="ee.jpg" alt="">
+                        <h3 class="z">Сет манты с компотом</h3><button>
+                            <h1>48 000 сум</h1>
+                        </button>
+                    </div>
+                </div><br><br>
+                <h1>Салаты</h1><br>
+                <div class="z4">
+
+                    <div class="two"><img src="s.jpg" alt="">
+                        <h2 class="z">Ачичук</h2><button>
+                            <h1>15 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="s2.jpg" alt="">
+                        <h2 class="z">Весенний</h2><button>
+                            <h1>12 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="two"><img src="s3.jpg" alt="">
+                        <h3 class="z">Греческий</h3><button>
+                            <h1>28 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="s4.jpg" alt="">
+                        <h3 class="z">Мужской каприз</h3><button>
+                            <h1>35 000 сум</h1>
+                        </button>
+                    </div>
+                </div>
+                <div class="z4">
+                    <div class="two"><img src="jj.jpg" alt="">
+                        <h2 class="z">Казы</h2><button>
+                            <h1>7 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="jj2.jpg" alt="">
+                        <h2 class="z">Перепелиное яйцо</h2><button>
+                            <h1>1 500 сум</h1>
+                        </button>
+                    </div>
+                    <div class="two"><img src="jj3.jpg" alt="">
+                        <h3 class="z">Куриное яйцо</h3><button>
+                            <h1>28 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="jj4.jpg" alt="">
+                        <h3 class="z">Мужской каприз</h3><button>
+                            <h1>35 000 сум</h1>
+                        </button>
+                    </div>
+                </div><br><br>
+                <h1>Напитки</h1><br>
+                <div class="z4">
+                    <div class="two"><img src="m.jpg" alt="">
+                        <h2 class="z">Казы</h2><button>
+                            <h1>7 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="m.jpg" alt="">
+                        <h2 class="z">Перепелиное яйцо</h2><button>
+                            <h1>1 500 сум</h1>
+                        </button>
+                    </div>
+                    <div class="two"><img src="m3.jpg" alt="">
+                        <h3 class="z">Куриное яйцо</h3><button>
+                            <h1>28 000 сум</h1>
+                        </button>
+                    </div>
+                    <div class="tree"><img src="m4.jpg" alt="">
+                        <h3 class="z">Мужской каприз</h3><button>
+                            <h1>35 000 сум</h1>
+                        </button>
+                    </div>
+                </div><br><br>
+                <h1>Хлеб</h1><br>
+                <div class="two"><img src="non.jpg" alt="">
+                    <h3 class="z">Сет манты с компотом</h3><button>
+                        <h1>48 000 сум</h1>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sigma">
+            <div class="savat">
+                <h1>Savat</h1>
+            </div>
+            <div class="SAVAT1"><p>Bu yerda siz qo‘shgan tovarlar paydo bo‘ladi</p></div>
+            
+        </div>
+    </div>
+
+    <div class="pas">
+        <div class="matnlar">
+            <p>Biz haqimizda               Aloqa uchun                Foydalanuvchi shartnomasi</p><br><br><br>
+            <div class="soz">
+                <p>Qo‘llab-quvvatlash xizmati: +998 71 200 40 01</p>
+            </div>
+        </div>
+        <div class="gaplar">
+            <div class="bor"><img src="b1.png" alt=""> </div>
+            <div class="suran"><img src="icons8-telegram-50.png" alt=""></div>
+            <p>Ⓒ 2024 Express24</p>
+        </div>
+    </div>
+    <style>
+        .matnlar {
+            width: 1174px;
+            height: 100px;
+            margin: 0px 0px 0px 500px;
+            position: relative;
+            top: 50px;
+
+        }
+
+        .gaplar {
+            display: flex;
+            margin-left: 1500px;
+        }
+
+        .pas {
+            width: 100%;
+            height: 175px;
+            background-color: #F6F6FB;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</body>
+
+</html>

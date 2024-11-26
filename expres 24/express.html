@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .rasm img {
+            width: 172px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .orta {
+            width: 1900px;
+            height: 100px;
+            display: flex;
+            position: fixed;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .qidiruv input {
+            width: 358px;
+            height: 48px;
+            border-radius: 5px;
+            padding: 14px 40px;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+
+        .tuma {
+            width: 82px;
+            height: 50px;
+            padding: 14px 16px;
+            background-color: yellow;
+            border-radius: 12px;
+            font-size: 15px;
+            margin-left: 7px;
+        }
+
+        .tanlov select {
+            width: 280px;
+            height: 48px;
+            border-radius: 14px 16px;
+            margin-left: 12px;
+        }
+
+        .center {
+            gap: 14px;
+            width: 1174px;
+            height: 3793px;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
+            margin-left: 250px;
+
+        }
+
+
+
+        .birinchi {
+            gap: 20px;
+            display: flex;
+        }
+
+        .rasm1 {
+            width: 179px;
+            height: 121px;
+            border-radius: 10px;
+        }
+
+
+        .img {
+            width: 179px;
+            height: 121px;
+
+        }
+
+        .yuqori {
+            width: 1900px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .gap {
+            width: 175px;
+            height: 42px;
+        }
+
+        .probel {
+            width: 1144px;
+            height: 50px;
+        }
+
+        .onerasm img {
+            width: 216px;
+            height: 123px;
+            border-radius: 10px;
+        }
+
+        .liniya {
+            display: flex;
+            gap: 20px;
+        }
+
+        .restorn {
+            width: 1144px;
+            height: 50px;
+            background-color: white;
+        }
+
+        .restoran {
+            width: 1144px;
+            height: 40px;
+        }
+
+        .iniput {
+            display: flex;
+            gap: 5px;
+            width: 932px;
+            height: 50px;
+        }
+
+        .tanlangan {
+            width: 144px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .aktii {
+            width: 80px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .new {
+            width: 100px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .Fast {
+            width: 107px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .asia {
+            width: 112px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .kofe {
+            width: 100px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .piza {
+            width: 110px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .burger {
+            width: 115px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .ewo select {
+            width: 100px;
+            height: 50px;
+            background-color: #F6F6FB;
+            padding: 15px;
+            border-radius: 10px;
+            margin-left: 140px;
+        }
+
+        .uluvchi {
+            display: flex;
+
+        }
+
+        .surat img {
+            width: 358px;
+            height: 204px;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .surat {
+            width: 358px;
+            margin-top: 25px;
+            height: 314px;
+            background-color: #F6F6FB;
+            border-radius: 20px;
+            box-shadow: 5px;
+
+        }
+
+        .odin {
+            display: flex;
+            gap: 40px;
+        }
+
+        .dva {
+            display: flex;
+            gap: 40px;
+        }
+
+        .tri {
+            display: flex;
+            gap: 40px;
+        }
+
+        .chitiri {
+            display: flex;
+            gap: 40px;
+        }
+
+        .zxcv {
+            margin: 20px;
+            width: 1900px;
+            height: 100px;
+            display: flex;
+            position: fixed;
+        }
+
+        .biryuzi {
+            padding: 7px;
+            width: 176px;
+            height: 305px;
+            background-color: #F6F6FB;
+            border-radius: 20px;
+
+        }
+
+        .biryuzi img {
+            border-radius: 20px;
+
+        }
+
+        .biryuzi button {
+            width: 156px;
+            height: 40px;
+            background-color: white;
+            padding: 12px 14px;
+            border-radius: 15px;
+            border: none;
+        }
+
+        .sliova {
+            width: 1144px;
+            height: 27px;
+        }
+
+        .mesto {
+            width: 1144px;
+            height: 50px;
+        }
+
+        .barrier {
+            display: flex;
+            gap: 20px;
+        }
+
+        .barrier img {
+            width: 164.7px;
+            height: 164.7px;
+            background-image: url(plow1.jpg);
+        }
+
+        .textt {
+            width: 166px;
+            height: 80px;
+        }
+
+        .yana button {
+            width: 1174px;
+            height: 48px;
+            background-color: #ECECEE;
+            border-radius: 15PX;
+            border-style: none;
+
+        }
+
+        .yana button:hover {
+            background-color: #cbcbcb;
+            border-radius: 15px;
+        }
+
+        .biryuzi button:hover {
+            background-color: #d8d7d7;
+        }
+
+        .pas {
+            width: 100%;
+            height: 175px;
+            background-color: #F6F6FB;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .matnlar {
+            width: 1174px;
+            height: 100px;
+            margin: 0px 0px 0px 500px;
+            position: relative;
+            top: 50px;
+
+        }
+
+        .gaplar {
+            display: flex;
+            margin-left: 1500px;
+        }
+
+        .tanlangan:hover {
+            background-color: #e4e3e3;
+        }
+
+        .aktii:hover {
+            background-color: #e4e3e3;
+        }
+
+        .new:hover {
+            background-color: #e4e3e3;
+        }
+
+        .Fast:hover {
+            background-color: #e4e3e3;
+        }
+
+        .asia:hover {
+            background-color: #e4e3e3;
+        }
+
+        .kofe:hover {
+            background-color: #e4e3e3;
+        }
+
+        .piza:hover {
+            background-color: #e4e3e3;
+        }
+
+        .burger:hover {
+            background-color: #e4e3e3;
+        }
+
+        .eww:hover {
+            background-color: #e4e3e3;
+        }
+
+        .star {
+            width: 58px;
+            height: 28px;
+            margin-left: 15px;
+            background-color: #e4e3e3;
+            border-radius: 100px;
+        }
+
+        .wtyf {
+            width: 100px;
+            height: 28px;
+            background-color: #16C647;
+            border-radius: 100px;
+            margin-left: 5px;
+            color: white;
+        }
+
+        .birga {
+            display: flex;
+        }
+
+        .heart {
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(240, 240, 240);
+            padding: 4px;
+            position: relative;
+            top: -70px;
+            left: 140px;
+        }
+
+        .savat {
+            width: 375px;
+            height: 71px;
+            border: gray;
+        }
+    </style>
+    <div class="orta">
+        <div class="zxcv">
+            <div class="rasm"><img src="Без названия (2).jpg" alt=""></div>
+            <div class="qidiruv"><input type="search" placeholder="🔍   Заведение, блюдо, товар или кухня"></div>
+            <button class="tuma">найти</button>
+            <div class="tanlov">
+                <select name="" id="">
+                    <option value="">
+                        <h1>📌Tashkent</h1>
+                    </option>
+                </select>
+            </div>
+        </select>
+    </div>
+</div>
+<div class="yuqori"></div>
+<div class="savat"></div>
+<div class="center1">
+    <div class="center">
+        <div class="birinchi">
+            <img src="KfkiNAnwopRJIvvJQFgXl.jpg" alt="" class="rasm1">
+                <img src="1.jpg" alt="" class="rasm1">
+                <img src="2.jpg" alt="" class="rasm1">
+                <img src="3.jpg" alt="" class="rasm1">
+                <img src="4.jpg" alt="" class="rasm1">
+                <img src="5.jpg" alt="" class="rasm1">
+            </div>
+            <div class="probel"></div>
+            <div class="matn">
+                <h1>Магазины</h1>
+            </div>
+            <div class="liniya">
+                <div class="onerasm"><img src="q.jpg" alt="">
+                    <h3>Full Craft
+                    </h3>
+                    <p>продукты</p>
+                </div>
+                <div class="onerasm"><img src="w.jpg" alt="">
+                    <h3>The Loaf
+                    </h3>
+                    <p>продукты</p>
+                </div>
+                <div class="onerasm"><img src="e.jpg" alt="">
+                    <h3>Bob's Market
+                    </h3>
+                    <p>продукты</p>
+                </div>
+                <div class="onerasm"><img src="r.jpg" alt="">
+                    <h3>FC MARKET
+                    </h3>
+                    <p>продукты</p>
+                </div>
+                <div class="onerasm"><img src="t.jpg" alt="">
+                    <h3>24 Open
+                    </h3>
+                    <p>продукты</p>
+                </div>
+            </div>
+            <div class="restorn"></div>
+            <div class="restoran">
+                <h1>Рестораны</h1>
+            </div>
+            <div class="uluvchi">
+                <div class="iniput">
+                    <div class="tanlangan">❤ Избранные</div>
+                    <div class="aktii">Акции</div>
+                    <div class="new">Новинки</div>
+                    <div class="Fast">Fast Food</div>
+                    <div class="asia">Азиатская</div>
+                    <div class="kofe">Кофейня</div>
+                    <div class="piza">Пиццерия</div>
+                    <div class="burger">Бургерная</div>
+                </div>
+                <div class="ewo"><select name="" id="" class="eww">
+                        <option value="">Еще</option>
+                    </select></div>
+            </div>
+            <div class="odin">
+                <div class="surat">
+                    <img src="11.jpg" alt="">
+                    <h1>Abi Express</h1>
+                    <p>Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="22.jpg" alt="">
+                    <h1>Teriyaki</h1>
+                    <p>Азиатская</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="33.jpg" alt="">
+                    <h1><a href="http://127.0.0.1:5501/express24.html">Osh Markazi Broadway</a></h1>
+                    <p>Узбекская · Новинки</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dva">
+                <div class="surat">
+                    <img src="44.jpg" alt="">
+                    <h1>American pizza Broadway</h1>
+                    <p>Fast Food · Пиццерия · Новинки</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="55.jpg" alt="">
+                    <h1>Мясоед Pizza & BBQ</h1>
+                    <p>Fast Food · Пиццерия · Бургерная · Акции</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="66.jpg" alt="">
+                    <h1>Московская пицца</h1>
+                    <p>Пиццерия · Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tri">
+                <div class="surat">
+                    <img src="77.jpg" alt="">
+                    <h1>Ploff&Kebab</h1>
+                    <p>Узбекская · Акции</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="13.jpg" alt="">
+                    <h1>ДОДО ПИЦЦА</h1>
+                    <p>Пиццерия · Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="99.jpg" alt="">
+                    <h1>Wendy's</h1>
+                    <p>Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chitiri">
+                <div class="surat">
+                    <img src="77.jpg" alt="">
+                    <h1>Ploff&Kebab</h1>
+                    <p>Узбекская · Акции</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="88.jpg" alt="">
+                    <h1>ДОДО ПИЦЦА</h1>
+                    <p>Пиццерия · Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="99.jpg" alt="">
+                    <h1>Wendy's</h1>
+                    <p>Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mesto"></div>
+            <div class="slova">
+                <h1>Тот самый плов</h1>
+            </div>
+            <div class="barrier">
+                <div class="biryuzi"><img src="plow1.jpg" alt="">
+                    <h3 class="textt">2+1 Плов с перепелиным яйцом</h3><button>
+                        <p>84 000 сум</p>
+                    </button>
+                </div>
+                <div class="biryuzi"><img src="plow2.jpg" alt="">
+                    <h3 class="textt">Свадебный плов сет</h3><button>48 000 сум</button>
+                </div>
+                <div class="biryuzi"><img src="plow3.jpg" alt="">
+                    <h3 class="textt">PayPlov комплект</h3><button>31 350 сум</button>
+                </div>
+                <div class="biryuzi"><img src="plow4.jpg" alt="">
+                    <h3 class="textt">PayPlov стандарт</h3><button>49 000 сум</button>
+                </div>
+                <div class="biryuzi"><img src="plow5.jpg" alt="">
+                    <h3 class="textt">Самарканд Ош</h3><button>91 800 сум</button>
+                </div>
+                <div class="biryuzi"><img src="plow6.jpg" alt="">
+                    <h3 class="textt"> Плов с казы и яйцом</h3><button>74 000 сум</button>
+                </div>
+            </div>
+            <div class="odin">
+                <div class="surat">
+                    <img src="11.jpg" alt="">
+                    <h1>Abi Express</h1>
+                    <p>Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="22.jpg" alt="">
+                    <h1>Teriyaki</h1>
+                    <p>Азиатская</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="33.jpg" alt="">
+                    <h1>Osh Markazi Broadway</h1>
+                    <p>Узбекская · Новинки</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dva">
+                <div class="surat">
+                    <img src="44.jpg" alt="">
+                    <h1>American pizza Broadway</h1>
+                    <p>Fast Food · Пиццерия · Новинки</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="55.jpg" alt="">
+                    <h1>Мясоед Pizza & BBQ</h1>
+                    <p>Fast Food · Пиццерия · Бургерная · Акции</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="66.jpg" alt="">
+                    <h1>Московская пицца</h1>
+                    <p>Пиццерия · Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tri">
+                <div class="surat">
+                    <img src="77.jpg" alt="">
+                    <h1>Ploff&Kebab</h1>
+                    <p>Узбекская · Акции</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="13.jpg" alt="">
+                    <h1>ДОДО ПИЦЦА</h1>
+                    <p>Пиццерия · Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="99.jpg" alt="">
+                    <h1>Wendy's</h1>
+                    <p>Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chitiri">
+                <div class="surat">
+                    <img src="77.jpg" alt="">
+                    <h1>Ploff&Kebab</h1>
+                    <p>Узбекская · Акции</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="88.jpg" alt="">
+                    <h1>ДОДО ПИЦЦА</h1>
+                    <p>Пиццерия · Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="surat">
+                    <img src="99.jpg" alt="">
+                    <h1>Wendy's</h1>
+                    <p>Fast Food</p>
+                    <div class="birga">
+                        <div class="star">
+                            <p>⭐ 4.8</p>
+                        </div>
+                        <div class="wtyf">
+                            <p>🚘4 000 сум</p>
+                        </div>
+                        <div class="heart">
+                            <p>❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="yana"><button>
+                    <h3>Yana koproq korsatish</h3>
+                </button></div><br><br><br><br>
+        </div>
+    </div>
+    </div><br><br><br>
+    <div class="pas">
+        <div class="matnlar">
+            <p>Biz haqimizda               Aloqa uchun                Foydalanuvchi shartnomasi</p><br><br><br>
+            <div class="soz">
+                <p>Qo‘llab-quvvatlash xizmati: +998 71 200 40 01</p>
+            </div>
+        </div>
+        <div class="gaplar">
+            <div class="bor"><img src="b1.png" alt=""> </div>
+            <div class="suran"><img src="icons8-telegram-50.png" alt=""></div>
+            <p>Ⓒ 2024 Express24</p>
+        </div>
+    </div>
+</body>
+
+</html>
